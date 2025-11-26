@@ -1,0 +1,85 @@
+site_name: BeerWithFriends-Back-end Documentation
+docs_dir: docs
+theme:
+  name: material
+  custom_dir: material/overrides
+  features:
+  - content.action.edit
+  - content.action.view
+  - content.code.annotate
+  - content.code.copy
+  - content.tooltips
+  - navigation.footer
+  - navigation.indexes
+  - navigation.sections
+  - navigation.tabs
+  - navigation.top
+  - navigation.tracking
+  - search.highlight
+  - search.share
+  - search.suggest
+  - toc.follow
+  palette:
+  - media: (prefers-color-scheme)
+    toggle:
+      icon: material/link
+      name: Switch to light mode
+  - media: '(prefers-color-scheme: light)'
+    scheme: default
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/toggle-switch
+      name: Switch to dark mode
+  - media: '(prefers-color-scheme: dark)'
+    scheme: slate
+    primary: black
+    accent: indigo
+    toggle:
+      icon: material/toggle-switch-off
+      name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+markdown_extensions:
+- pymdownx.superfences:
+    custom_fences:
+    - name: mermaid
+      class: mermaid
+      format: '!!python/name:pymdownx.superfences.fence_code_format'
+nav:
+- Home: index.md
+- Code Reference:
+  - .github/workflows/build.yml: code/.github/workflows/build.yml.md
+  - .gitignore: code/.gitignore.md
+  - .vs/BeerWithFriendsBackend/FileContentIndex/read.lock: code/.vs/BeerWithFriendsBackend/FileContentIndex/read.lock.md
+  - .vs/VSWorkspaceState.json: code/.vs/VSWorkspaceState.json.md
+  - BeerWithFriendsBackend/.vs/BeerWithFriends-Back-end/FileContentIndex/read.lock: code/BeerWithFriendsBackend/.vs/BeerWithFriends-Back-end/FileContentIndex/read.lock.md
+  - BeerWithFriendsBackend/.vs/BeerWithFriends-Back-end/v17/TestStore/0/000.testlog: code/BeerWithFriendsBackend/.vs/BeerWithFriends-Back-end/v17/TestStore/0/000.testlog.md
+  - BeerWithFriendsBackend/.vs/BeerWithFriendsBackend/FileContentIndex/read.lock: code/BeerWithFriendsBackend/.vs/BeerWithFriendsBackend/FileContentIndex/read.lock.md
+  - BeerWithFriendsBackend/.vs/BeerWithFriendsBackend/config/applicationhost.config: code/BeerWithFriendsBackend/.vs/BeerWithFriendsBackend/config/applicationhost.config.md
+  - BeerWithFriendsBackend/BeerWithFriendsBackend/BeerWithFriendsBackend.csproj: code/BeerWithFriendsBackend/BeerWithFriendsBackend/BeerWithFriendsBackend.csproj.md
+  - BeerWithFriendsBackend/BeerWithFriendsBackend/BeerWithFriendsBackend.csproj.user: code/BeerWithFriendsBackend/BeerWithFriendsBackend/BeerWithFriendsBackend.csproj.user.md
+  - BeerWithFriendsBackend/BeerWithFriendsBackend/Controllers/BeerController.cs: code/BeerWithFriendsBackend/BeerWithFriendsBackend/Controllers/BeerController.cs.md
+  - BeerWithFriendsBackend/BeerWithFriendsBackend/Controllers/ReviewController.cs: code/BeerWithFriendsBackend/BeerWithFriendsBackend/Controllers/ReviewController.cs.md
+  - BeerWithFriendsBackend/BeerWithFriendsBackend/Data/BeerData.cs: code/BeerWithFriendsBackend/BeerWithFriendsBackend/Data/BeerData.cs.md
+  - BeerWithFriendsBackend/BeerWithFriendsBackend/Data/BeerWithFriendsBackendContext.cs: code/BeerWithFriendsBackend/BeerWithFriendsBackend/Data/BeerWithFriendsBackendContext.cs.md
+  - BeerWithFriendsBackend/BeerWithFriendsBackend/Data/ReviewData.cs: code/BeerWithFriendsBackend/BeerWithFriendsBackend/Data/ReviewData.cs.md
+  - BeerWithFriendsBackend/BeerWithFriendsBackend/Logic/BeerLogic.cs: code/BeerWithFriendsBackend/BeerWithFriendsBackend/Logic/BeerLogic.cs.md
+  - BeerWithFriendsBackend/BeerWithFriendsBackend/Logic/ReviewLogic.cs: code/BeerWithFriendsBackend/BeerWithFriendsBackend/Logic/ReviewLogic.cs.md
+  - BeerWithFriendsBackend/BeerWithFriendsBackend/Models/Beer.cs: code/BeerWithFriendsBackend/BeerWithFriendsBackend/Models/Beer.cs.md
+  - BeerWithFriendsBackend/BeerWithFriendsBackend/Models/Review.cs: code/BeerWithFriendsBackend/BeerWithFriendsBackend/Models/Review.cs.md
+  - BeerWithFriendsBackend/BeerWithFriendsBackend/Program.cs: code/BeerWithFriendsBackend/BeerWithFriendsBackend/Program.cs.md
+  - BeerWithFriendsBackend/BeerWithFriendsBackend/Properties/launchSettings.json: code/BeerWithFriendsBackend/BeerWithFriendsBackend/Properties/launchSettings.json.md
+  - BeerWithFriendsBackend/BeerWithFriendsBackend/Properties/serviceDependencies.json: code/BeerWithFriendsBackend/BeerWithFriendsBackend/Properties/serviceDependencies.json.md
+  - BeerWithFriendsBackend/BeerWithFriendsBackend/Properties/serviceDependencies.local.json: code/BeerWithFriendsBackend/BeerWithFriendsBackend/Properties/serviceDependencies.local.json.md
+  - BeerWithFriendsBackend/BeerWithFriendsBackend/Properties/serviceDependencies.local.json.user: code/BeerWithFriendsBackend/BeerWithFriendsBackend/Properties/serviceDependencies.local.json.user.md
+  - BeerWithFriendsBackend/BeerWithFriendsBackend/WeatherForecast.cs: code/BeerWithFriendsBackend/BeerWithFriendsBackend/WeatherForecast.cs.md
+  - BeerWithFriendsBackend/BeerWithFriendsBackend/appsettings.Development.json: code/BeerWithFriendsBackend/BeerWithFriendsBackend/appsettings.Development.json.md
+  - BeerWithFriendsBackend/BeerWithFriendsBackend/appsettings.json: code/BeerWithFriendsBackend/BeerWithFriendsBackend/appsettings.json.md
+  - BeerWithFriendsBackend/BeerWithFriendsBackend.sln: code/BeerWithFriendsBackend/BeerWithFriendsBackend.sln.md
+  - BeerWithFriendsBackend/BeerWithFriendsTests/BeerWithFriendsTests.csproj: code/BeerWithFriendsBackend/BeerWithFriendsTests/BeerWithFriendsTests.csproj.md
+  - BeerWithFriendsBackend/BeerWithFriendsTests/IntegrationTestBeer.cs: code/BeerWithFriendsBackend/BeerWithFriendsTests/IntegrationTestBeer.cs.md
+  - BeerWithFriendsBackend/BeerWithFriendsTests/UnitTestBeer.cs: code/BeerWithFriendsBackend/BeerWithFriendsTests/UnitTestBeer.cs.md
+  - BeerWithFriendsBackend/BeerWithFriendsTests/Usings.cs: code/BeerWithFriendsBackend/BeerWithFriendsTests/Usings.cs.md
+  - mkdocs.yml: code/mkdocs.yml.md
